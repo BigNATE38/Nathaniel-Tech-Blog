@@ -6,3 +6,29 @@
     font-family: Righteous;
 }
 
+.main-card {
+    padding-top: 3.5em;
+    height: 43em;
+}
+
+.new-post-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.title-name {
+    width: 50em;
+}
+
+.content-len {
+    width: 70em;
+    height: 20em;
+}
+
+.content-space {
+    padding-top: 1.5em;
+}
+
+.create-button-space {
+    padding-top: 2em;
+}
