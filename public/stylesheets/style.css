@@ -87,3 +87,7 @@
 .post-card-title {
     outline: solid;
 }
+
+.nav-items-align {
+    display: inline-block;
+}
