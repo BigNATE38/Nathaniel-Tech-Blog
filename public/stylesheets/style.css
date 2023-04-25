@@ -72,3 +72,18 @@
     display: flex;
     justify-content: center;
 }
+
+.post-card-size {
+     width: 50%;
+     outline: solid;
+}
+
+.post-card-position {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.post-card-title {
+    outline: solid;
+}
