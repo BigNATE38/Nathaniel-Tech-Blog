@@ -1,11 +1,12 @@
 {{!-- <article class="post-card-position">
     <div class="card post-card-size">
-        <h5 class="card-header bg-success post-card-title">Title</h5>
+        <h5 class="card-header bg-success post-card-title">{{title}}</h5>
         <div class="card-body">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">{{post_content}}.</p>
         </div>
         <div class="card-body">
-          <p class="card-text">posted by nate on 04/25/23 | 1 Comment</p>
+          <p class="card-text">posted by {{user.username}} on {{format_date createdAt}} |</p>
+          <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         </div>
     </div>
 </article> --}}

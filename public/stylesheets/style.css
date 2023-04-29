@@ -91,3 +91,8 @@
 .nav-items-align {
     display: inline-block;
 }
+
+.list-the-post {
+    margin: 0;
+    padding: 0;
+}
