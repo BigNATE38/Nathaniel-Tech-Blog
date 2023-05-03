@@ -1,12 +1,13 @@
-{{!-- <article class="post-card-position">
+<article class="post-card-position">
     <div class="card post-card-size">
-        <h5 class="card-header bg-success post-card-title">{{title}}</h5>
+        {{!-- // Make sure to figure out font size down below since you removed the h5 tag for font // --}}
+        <a class="card-header post-card-title" href="/post/{{id}}">{{title}}</a>
         <div class="card-body">
-            <p class="card-text">{{post_content}}.</p>
+            <p class="card-text">{{post_content}}</p>
         </div>
         <div class="card-body">
-          <p class="card-text">posted by {{user.username}} on {{format_date createdAt}} |</p>
+          <p class="card-text">posted by {{user.username}} on {{format_date created_at}} |</p>
           <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         </div>
     </div>
-</article> --}}
+</article>
