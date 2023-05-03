@@ -84,7 +84,19 @@
     padding-top: 2em;
 }
 
+.comments-card-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
 .post-card-title {
+    outline: solid;
+}
+
+.post-card-thing {
     outline: solid;
 }
 
@@ -95,4 +107,8 @@
 .list-the-post {
     margin: 0;
     padding: 0;
+}
+
+.comments-postition {
+    flex-direction: column;
 }
