@@ -6,13 +6,13 @@
         {{#each posts as |post|}}
         <li>
             {{> post-info post}}
-                {{!-- <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a> --}}
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
         </li>
         {{/each}}
     </ol>
 </section>
 {{/if}}
 
-<div class="text-center new-post-btn">
+<div class="new-post-btn">
   <a href="/add-posts" class="btn btn-success btn-lg">+ New Post</a>
 </div>

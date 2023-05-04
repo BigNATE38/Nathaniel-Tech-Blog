@@ -1,28 +1,30 @@
-// async function editHandler(event) {
-//     event.preventDefault();
+async function editHandler(event) {
+    event.preventDefault();
 
-//     const title = document.querySelector('input[name="post-title"]').value.trim();
-//     const id = window.location.toString().split("/")[
-//         window.location.toString().split("/").length - 1
-//     ];
+    const title = document.querySelector('input[name="new-post-title"]').value.trim();
+    const post_content = document.querySelector('input[name="new-comment-body"]').value.trim();
+    const id = window.location.toString().split("/")[
+        window.location.toString().split("/").length - 1
+    ];
 
-//     const response = await fetch(`/api/posts/${id}`, {
-//         method: "PUT",
-//         body: JSON.stringify({
-//             title,
-//         }),
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-//     });
+    const response = await fetch(`/api/posts/${id}`, {
+        method: "PUT",
+        body: JSON.stringify({
+            title,
+            post_content
+        }),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
 
-//     if (response.ok) {
-//         document.location.replace("/dashboard");
-//     } else {
-//         alert(response.statusText);
-//     }
-// }
+    if (response.ok) {
+        document.location.replace("/dashboard");
+    } else {
+        alert(response.statusText);
+    }
+}
 
-// document
-//     .querySelector(".edit-post-form")
-//     .addEventListener("submit", editHandler);
+document
+    .querySelector(".edit-post-form")
+    .addEventListener("submit", editHandler);

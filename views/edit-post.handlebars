@@ -1,0 +1,23 @@
+
+    <form class="edit-post-form post-card-position">
+        <div class="card post-card-size">
+            <h4 class="card-header bg-success post-card-title">Edit Post</h4>
+            <div class="card-body">
+                <h5>Title</h5>
+                <input class="title-name" type="text" id="new-post-title" name="new-post-title" value="{{post.title}}"/>
+                <div class="content-space">
+                    <h5>Content</h5>
+                    <input class="content-len" id="new-comment-body" name="new-comment-body" value="{{post.post_content}}"/>
+                </div>
+            </div>
+            <div class="card-body">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-success delete-post-btn">Delete</button>
+            </div>
+        </div>
+    </form> 
+
+<script src="/javascript/editPost.js"></script>
+<script src="/javascript/deletePost.js"></script>
