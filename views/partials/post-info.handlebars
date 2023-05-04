@@ -6,7 +6,7 @@
             <p class="card-text">{{post_content}}</p>
         </div>
         <div class="card-body">
-          <p class="card-text">posted by {{user.username}} on {{format_date created_at}} |</p>
+          <p class="card-text">posted by {{user.username}} on {{format_date createdAt}} </p>
           <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         </div>
     </div>

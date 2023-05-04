@@ -1,6 +1,8 @@
+<h2 class="text-center dashboard-title">Your Dashboard</h2>
+
 {{#if posts.length}}
 <section>
-    <ol>
+    <ol class="remove-number">
         {{#each posts as |post|}}
         <li>
             {{> post-info post}}
@@ -11,6 +13,6 @@
 </section>
 {{/if}}
 
-<div class="text-center new-post-btn fixed-bottom">
+<div class="text-center new-post-btn">
   <a href="/add-posts" class="btn btn-success btn-lg">+ New Post</a>
 </div>

@@ -36,7 +36,7 @@
 }
 
 .new-post-btn {
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .login-card {
@@ -111,4 +111,12 @@
 
 .comments-postition {
     flex-direction: column;
+}
+
+.remove-number {
+    list-style: none;
+}
+
+.dashboard-title {
+    padding-top: 1em;
 }
