@@ -20,4 +20,4 @@ N/A
 ## Deployment 
 (https://the-tech-news38.herokuapp.com/)
 ![SiteImage](images/techbloghome.png)
-![SiteImage](images/ORM_Pic2.png)
+![SiteImage](images/techblogdashboard.png)
