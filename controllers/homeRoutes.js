@@ -2,15 +2,6 @@ const router = require('express').Router();
 const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
 
-// router.get('/', async (req, res) => {
-//     res.render('homepage');
-// });
-
-// router.get('/login', (req, res) => {
-//     res.render('login');
-// });
-
-// This will be the code when it is all done
 
 router.get("/", (req, res) => {
     console.log("======================");
